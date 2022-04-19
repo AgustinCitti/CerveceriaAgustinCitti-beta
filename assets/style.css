@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{  
+    text-decoration: none;
+    color:white;
+    list-style: none;
+}
+body{
+    display:grid;
+    grid-template-columns:1fr  ;
+    grid-template-rows:2em 4fr  1em ;
+    grid-template-areas: "encabezado encabezado encabezado encabezado"
+                          "contenido  contenido  contenido contenido"
+                          "pie         pie        pie       pie";
+}
+img{
+    width:500px;
+    height: 500px;
+}
+/*Encabezado*/
+header{
+    grid-area:encabezado;
+}
+
+ nav{
+    background-color: #F2A03D;
+    display: flex;
+    justify-content: center; 
+   align-content: center;
+   position:fixed;
+  height: 3em,;
+   width:100%;
+    
+}
+header nav .ul-nav{
+    display: flex;
+    align-items: center;
+    
+}
+header nav .ul-nav .li-nav{
+    display: inline-block;
+    padding-right: 3em;
+    font-size: 30px;
+}
+
+header nav .ul-nav .li-nav a:hover {
+color:grey;
+}
+/*Contenido*/
+main{
+    grid-area:contenido;
+    
+}
+.titulo-ind{
+    display: flex;
+    justify-content: center;
+    background-image: url(./Imagenes/prns.jpg);
+    height: 725px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+    
+}
+.titulo-ind h1{
+        color:white;
+        font-size: 120px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding-top: 300px;
+        font-family: 'Playfair Display SC', serif; 
+        
+}
+.section-main-ind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(#558ED9,#4679A6 );
+}
+ .div-main-ind{
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+    justify-content: center;
+    
+}
+.div-main-ind img{
+    padding:10px;
+    border-radius: 50%;
+}
+.div-main-ind div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding:10px;
+}
+.div-main-ind h2{
+    font-size: 50px;
+    padding:20px;
+    font-family: 'Playfair Display SC', serif; 
+}
+.div-main-ind a:hover{
+    color:rgb(206, 206, 206);
+}
+.div-main-ind p{
+    font-size: 30px;
+    padding:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+.div-main-ind-2{
+    display: flex;
+    flex-direction: row;
+   
+}
+.div-main-ind-2 img{
+    padding:10px;
+    border-radius: 50%;
+}
+.div-main-ind-2 div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.div-main-ind-2 h2{
+    font-size: 50px;
+    padding:20px;
+    font-family: 'Playfair Display SC', serif; 
+}
+.div-main-ind-2 a:hover{
+    color:rgb(206, 206, 206);
+}
+.div-main-ind-2 p{
+    font-size: 30px;
+    padding:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+.div-latas-ind{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.div-latas-img-ind{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div-latas-ind img{
+   border-radius:50% ;
+   width: 300px;
+   height: 300px;
+   padding:10px;
+}
+.div-latas-ind h2{
+    font-size: 50px;
+    padding:20px;
+    font-family: 'Playfair Display SC', serif; 
+}
+.div-latas-ind a:hover{
+    color:rgb(206, 206, 206);
+}
+
+
+
+
+.div-accesorios-ind{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.div-accesorios-img-ind{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div-accesorios-ind img{
+   border-radius:50% ;
+   width: 300px;
+   height: 300px;
+   padding:10px;
+}
+.div-accesorios-ind h2{
+    font-size: 50px;
+    padding:20px;
+    font-family: 'Playfair Display SC', serif; 
+}
+.div-accesorios-ind a:hover{
+    color:rgb(206, 206, 206);
+}
+/*Pie de pagina*/
+footer{
+    display: flex;
+    grid-area: pie;
+    width:100%;
+    background-color: #BF2604;
+    color:white;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+/*Contactanos*/
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(#558ED9,#4679A6 );
+    padding:100px;
+}
+.contactanos form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding:81px;
+}
+.cont{
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+}
+form label{
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+}
+.inputs-cont{
+    padding:10px;
+}
+/*latas*/
+.titulo-lat{
+    display: flex;
+    justify-content: center;
+    background-image: url(./Imagenes/beach.jpg);
+    height: 725px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+    
+}
+.titulo-lat h1{
+        color:white;
+        font-size: 120px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding-top: 300px;
+        font-family: 'Playfair Display SC', serif; 
+        
+}
+.section-main-lat{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-image: linear-gradient(#558ED9,#4679A6);
+}
+.div-latas-img-lat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+.div-latas-img-lat img{
+   border-radius:50% ;
+   width: 300px;
+   height: 300px;
+   padding:20px;
+   justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+
+
+
+
+
+/*accesorios*/
+img{
+    width:300px;
+    height: 300px;
+}
+.titulo-acc{
+    display: flex;
+    justify-content: center;
+    background-image: url(./Imagenes/cerveza.jpg);
+    height: 725px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+    
+}
+.titulo-acc h1{
+        color:white;
+        font-size: 120px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding-top: 300px;
+        font-family: 'Playfair Display SC', serif; 
+        
+}
+.section-main-acc{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-image: linear-gradient(#558ED9,#4679A6);
+}
+.div-accesorios-img-acc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+.div-accesorios-img-acc img{
+   border-radius:50% ;
+   width: 300px;
+   height: 300px;
+   padding:20px;
+   justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+}
+/*nosotros*/
+.video-nos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+}
+.video-nos iframe{
+    width: 800px;
+    height: 500px;
+}
+
+/*Responsive Index*/
+@media screen and (max-width:320px){
+   body{
+    display:grid;
+    grid-template-columns:1fr 1fr  ;
+    grid-template-rows:1em 4fr  1em ;
+    grid-template-areas: "encabezado encabezado"
+                          "contenido  contenido"
+                            "pie         pie";
+    }
+
+    /*Encabezado*/
+    header{
+        grid-area:encabezado;
+    }
+    
+     nav{
+        background-color: #F2A03D;
+        display: flex;
+        justify-content: start; 
+       align-content: start;
+       position:fixed;
+      height: 3em,;
+       width:100%;
+        
+    }
+    header nav .ul-nav{
+        display: flex;
+        align-items: start;
+        
+    }
+    header nav .ul-nav .li-nav{
+        display: flex;
+        justify-content: start; 
+       align-content: start;
+        font-size: 15px;
+        padding:5px;
+    }
+    /*Contenido*/
+    main{
+        grid-area:contenido; 
+    }
+    .titulo-ind{
+        display: flex;
+        justify-content: center;
+        
+        height: 490px;
+        
+        background-size:100%;
+        
+    }
+    .titulo-ind h1{
+            color:rgb(255, 255, 255);
+            font-size: 70px;
+            justify-content: start;
+            align-content: start;
+            justify-items: start;
+            align-items: start;
+            padding-top: 200px;
+            font-family: 'Playfair Display SC', serif; 
+            background-image: url(./Imagenes/prns.jpg);
+            height: 290px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: start;
+            padding-left: 7px;
+    }
+
+
+    .div-main-ind{
+        display: flex;
+        flex-direction: column;
+        
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .div-main-ind img{
+        padding:5px;
+        border-radius: 50%;
+    }
+
+
+
+    .div-main-ind div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding:10px;
+    }
+    .div-main-ind h2{
+        font-size: 45px;
+        padding:20px;
+        font-family: 'Playfair Display SC', serif; 
+    }
+    .div-main-ind a:hover{
+        color:rgb(206, 206, 206);
+    }
+    .div-main-ind p{
+        font-size: 30px;
+        padding:20px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+    }
+    .div-main-ind-2{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .div-main-ind-2 img{
+        padding:5px;
+        border-radius: 50%;
+    }
+    .div-main-ind-2 div{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+    }
+    .div-main-ind-2 h2{
+        font-size: 45px;
+        padding:20px;
+        font-family: 'Playfair Display SC', serif; 
+    }
+    .div-main-ind-2 a:hover{
+        color:rgb(206, 206, 206);
+    }
+    .div-main-ind-2 p{
+        font-size: 30px;
+        padding:20px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+    }
+    .div-latas-ind{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .div-latas-img-ind{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .div-latas-ind img{
+       border-radius:50% ;
+       width: 250px;
+       height: 250px;
+       padding:15px;
+    }
+    .div-latas-ind h2{
+        font-size: 45px;
+        padding:20px;
+        font-family: 'Playfair Display SC', serif; 
+    }
+    .div-latas-ind a:hover{
+        color:rgb(206, 206, 206);
+    }
+    
+    
+    
+    
+    .div-accesorios-ind{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .div-accesorios-img-ind{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .div-accesorios-ind img{
+       border-radius:50% ;
+       width: 250px;
+       height: 250px;
+       padding:10px;
+    }
+    .div-accesorios-ind h2{
+        font-size: 45px;
+        padding:20px;
+        font-family: 'Playfair Display SC', serif; 
+    }
+    .div-accesorios-ind a:hover{
+        color:rgb(206, 206, 206);
+    }
+
+    /*Pagina latas*/
+
+    .titulo-lat h1{
+        color:#000000;
+        font-size: 60px;
+        justify-content: start;
+        align-content: start;
+        justify-items: start;
+        align-items: start;
+        padding-top: 200px;
+        font-family: 'Playfair Display SC', serif; 
+        background-image: url(./Imagenes/beach.jpg);
+        height: 290px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: start;
+        padding-left: 7px;
+    }
+    .titulo-lat{
+        display: flex;
+        justify-content: center;
+        
+        height: 490px;
+        
+        background-size:100%;
+        
+    }
+    .section-main-lat{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-image: linear-gradient(#558ED9,#4679A6);
+    }
+    .div-latas-img-lat img{
+        border-radius:50% ;
+        width: 200px;
+        height: 200px;
+        padding:10px;
+     }
+    /*Pagina accesorios*/
+
+    .titulo-acc h1{
+        color:#ffffff;
+        font-size: 50px;
+        justify-content: start;
+        align-content: start;
+        justify-items: start;
+        align-items: start;
+        padding-top: 200px;
+        font-family: 'Playfair Display SC', serif; 
+        background-image: url(./Imagenes/cerveza.jpg);
+        height: 290px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: start;
+        padding-left: 7px;
+    }
+    .titulo-acc{
+        display: flex;
+        justify-content: center;
+        
+        height: 490px;
+        
+        background-size:100%;
+        
+    }
+    .section-main-acc{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-image: linear-gradient(#558ED9,#4679A6);
+    }
+    .div-accesorios-img-acc img{
+        border-radius:50% ;
+        width: 200px;
+        height: 200px;
+        padding:10px;
+     }
+}

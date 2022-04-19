@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervecería</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a href="../index.html">Inicio</a></li>
+                <li class="li-nav"><a href="Nosotros.html">Nosotros</a></li>
+                <li class="li-nav"><a href="Contactanos.html">Contactanos</a></li>
+                <li class="li-nav"><a href="Latas.html">Latas</a></li>
+                <li class="li-nav"><a href="Accesorios.html">Accesorios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contenido-->
+    <main>
+        
+        <div class="contactanos">
+            <h2 class="cont">¡Conactatanos!</h2>
+           <form>
+               <input class="inputs-cont" type="name" name="Nombre"  placeholder="Ingresar nombre">
+               <input class="inputs-cont" type="name" name="apellido"  placeholder="Ingresar apellido">
+              
+               <input class="inputs-cont" type="email" name="Mail"  placeholder="Ingresar @mail"> 
+               <label for="fechanac">Fecha de nacimiento:</label>
+               <input class="inputs-cont" type="date" name="fechanac" >
+               <label for="sexo">Sexo:</label>
+               <select name="sexo">
+                <option value="">...</option>
+                <option value="Mujer" >Mujer</option>
+                <option value="Hombre" >Hombre</option>
+               </select>  
+               <input class="inputs-cont" type="text" name="opinion" placeholder="Escriba su opinión..." >
+                <input class="inputs-cont" type="reset" value="Borrar">
+    
+               <input type="submit" name="enviar" placeholder="Enviar">
+           </form>
+        </div>
+         
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+        <p>Derechos Reservados @CerveceríaInstagram</p>
+    </footer>
+</body>
+</html>
