@@ -35,7 +35,7 @@ header{
    position:fixed;
   height: 3em,;
    width:100%;
-    
+    z-index: 2;
 }
 header nav .ul-nav{
     display: flex;
@@ -54,7 +54,7 @@ color:grey;
 /*Contenido*/
 main{
     grid-area:contenido;
-    
+    overflow: hidden;
 }
 .titulo-ind{
     display: flex;
@@ -104,6 +104,9 @@ main{
     padding:10px;
 }
 .div-main-ind h2{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
     font-size: 50px;
     padding:20px;
     font-family: 'Playfair Display SC', serif; 
@@ -132,6 +135,8 @@ main{
     padding:10px;
 }
 .div-main-ind-2 h2{
+    display: flex;
+    justify-content:end ;
     font-size: 50px;
     padding:20px;
     font-family: 'Playfair Display SC', serif; 
@@ -358,7 +363,7 @@ img{
 }
 
 /*Responsive Index*/
-@media screen and (max-width:320px){
+@media screen and (max-width:425px){
    body{
     display:grid;
     grid-template-columns:1fr 1fr  ;
@@ -376,12 +381,12 @@ img{
      nav{
         background-color: #F2A03D;
         display: flex;
-        justify-content: start; 
+        justify-content: center; 
        align-content: start;
        position:fixed;
       height: 3em,;
        width:100%;
-        
+        overflow: hidden;
     }
     header nav .ul-nav{
         display: flex;
@@ -406,15 +411,15 @@ img{
         height: 490px;
         
         background-size:100%;
-        
+        overflow: hidden;
     }
     .titulo-ind h1{
             color:rgb(255, 255, 255);
             font-size: 70px;
-            justify-content: start;
-            align-content: start;
-            justify-items: start;
-            align-items: start;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
             padding-top: 200px;
             font-family: 'Playfair Display SC', serif; 
             background-image: url(./Imagenes/prns.jpg);
@@ -422,7 +427,7 @@ img{
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: start;
-            padding-left: 7px;
+            padding-left: 60px;
     }
 
 
@@ -435,8 +440,11 @@ img{
         
     }
     .div-main-ind img{
-        padding:5px;
+       display: flex;
+       justify-content: center;
+       justify-items: center;
         border-radius: 50%;
+        padding: 20px;
     }
 
 
@@ -446,6 +454,7 @@ img{
         flex-direction: column;
         align-content: center;
         padding:10px;
+        overflow: hidden;
     }
     .div-main-ind h2{
         font-size: 45px;
@@ -469,11 +478,13 @@ img{
     .div-main-ind-2 img{
         padding:5px;
         border-radius: 50%;
+        padding: 20px;
     }
     .div-main-ind-2 div{
         display: flex;
         flex-direction: column;
         padding:10px;
+        overflow: hidden;
     }
     .div-main-ind-2 h2{
         font-size: 45px;
@@ -493,6 +504,7 @@ img{
         display: flex;
         flex-direction: column;
         padding: 10px;
+        overflow: hidden;
     }
     .div-latas-img-ind{
         display: flex;
@@ -521,6 +533,7 @@ img{
         display: flex;
         flex-direction: column;
         padding: 10px;
+        overflow: hidden;
     }
     .div-accesorios-img-ind{
         display: flex;
@@ -620,4 +633,200 @@ img{
         height: 200px;
         padding:10px;
      }
+}
+/*Animaciones*/
+/*animaciones nav*/
+.li-nav a:hover{
+    animation-name: nav;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes nav{
+    0%{
+        scale: 0;
+    }
+    100%{
+         font-size: 40px;
+    }
+   
+    
+}
+/*animaciones index*/
+.animacion-titulo h1{
+    animation-name: titulo;
+    animation-duration:2s ;
+    animation-timing-function: ease-in;
+    
+    
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+        transform: translate(0px, 100px);
+    }
+    100%{
+         opacity: 1;
+    }
+}
+
+
+.div-main-ind h2:hover{
+    animation-name: div-1-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    
+    
+}
+@keyframes div-1-ind{
+    0%{
+        
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+.div-main-ind img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
+}
+.div-main-ind-2 h2:hover{
+    animation-name: div-2-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    
+    
+}
+@keyframes div-2-ind{
+    0%{
+        
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(-100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+.div-main-ind-2 img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
+}
+.div-latas-ind h2:hover{
+    animation-name: div-1-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    
+    
+}
+@keyframes div-1-ind{
+    0%{
+        
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+.div-latas-ind img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+.div-accesorios-ind h2:hover{
+    animation-name: div-1-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    
+    
+}
+@keyframes div-1-ind{
+    0%{
+        
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+.div-accesorios-img-acc img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
+}
+.div-latas-img-lat img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
 }
