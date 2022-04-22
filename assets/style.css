@@ -800,6 +800,22 @@ img{
         transform: translate(0px, 0px);
     }
 }
+.div-accesorios-ind img:hover{
+    animation-name: div-1-img-ind;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes div-1-img-ind{
+    0%{
+    }
+   
+    100%{
+        transform: scale(1.1);
+    }
+}
+/*paginas*/
 .div-accesorios-img-acc img:hover{
     animation-name: div-1-img-ind;
     animation-duration:1s ;
